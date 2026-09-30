@@ -1,0 +1,14 @@
+{
+  "block.rovi.assembler": "Assembler",
+  "block.rovi.garage": "Garage",
+  "item.rovi.drive_sprocket": "Drive Sprocket",
+  "item.rovi.idler_wheel": "Idler Wheel",
+  "item.rovi.return_roller": "Return Roller",
+  "item.rovi.rovi_arm": "Rovi Arm",
+  "item.rovi.rovi_frame": "Rovi Frame",
+  "item.rovi.rovi_head": "Rovi Head",
+  "item.rovi.rovi_running_gear": "Rovi Running Gear",
+  "item.rovi.track": "Track",
+  "item.rovi.wheel": "Wheel",
+  "itemGroup.rovi": "Rovi"
+}
