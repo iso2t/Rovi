@@ -18,7 +18,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 @AllArgsConstructor
-public abstract class RoviMod implements Rovi {
+public abstract sealed class RoviMod implements Rovi permits RoviClient, RoviServer {
 
 	@Getter
 	public IEventBus eventBus;
@@ -26,7 +26,7 @@ public abstract class RoviMod implements Rovi {
 	@Getter
 	public ModContainer modContainer;
 
-	public void init () {
+	public final void init () {
 		RoviBlocks.REGISTRY.register(getEventBus());
 		RoviItems.REGISTRY.register(getEventBus());
 

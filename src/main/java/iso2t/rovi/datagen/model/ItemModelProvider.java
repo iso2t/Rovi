@@ -35,9 +35,6 @@ public final class ItemModelProvider extends ModelProviders {
 		return Stream.empty();
 	}
 
-	/**
-	 * Only non-block items are handled here; block items are owned by {@link BlockModelProvider}.
-	 */
 	@Override
 	protected @NotNull Stream<? extends Holder<Item>> getKnownItems () {
 		return BuiltInRegistries.ITEM.listElements().filter(holder -> holder.getKey().identifier().getNamespace().equals(Rovi.MODID)).filter(holder -> !(holder.value() instanceof BlockItem) && !(holder.value() instanceof IManualModel));

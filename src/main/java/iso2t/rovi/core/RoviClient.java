@@ -9,7 +9,7 @@ import net.neoforged.fml.common.Mod;
 
 @Mod(value = Rovi.MODID, dist = Dist.CLIENT)
 @SuppressWarnings("unused")
-public class RoviClient extends RoviMod {
+public final class RoviClient extends RoviMod {
 
 	public RoviClient (IEventBus bus, ModContainer modContainer) {
 		super(bus, modContainer);
