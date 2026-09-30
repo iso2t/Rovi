@@ -3,6 +3,7 @@ package iso2t.rovi.datagen.model;
 import iso2t.rovi.core.Rovi;
 import iso2t.rovi.core.definitions.BlockDefinition;
 import iso2t.rovi.core.definitions.RoviBlocks;
+import iso2t.rovi.helpers.models.IManualModel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.TexturedModel;
@@ -42,7 +43,7 @@ public final class BlockModelProvider extends ModelProviders {
 	protected void registerModels (@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
 		this.generators = blockModels;
 		for (var block : RoviBlocks.getBlocks()) {
-			blockWithItem(block);
+			if (!(block.get() instanceof IManualModel)) blockWithItem(block);
 		}
 	}
 

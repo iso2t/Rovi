@@ -5,6 +5,7 @@ import iso2t.rovi.core.CreativeTab;
 import iso2t.rovi.core.Rovi;
 import iso2t.rovi.helpers.registry.RegistryString;
 import iso2t.rovi.helpers.resource.Resource;
+import iso2t.rovi.item.RoviHeadItem;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import net.minecraft.resources.Identifier;
@@ -23,8 +24,8 @@ public final class RoviItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(Rovi.MODID);
 	private static final List<ItemDefinition<?>> ITEMS = new ArrayList<>();
 
-	public static final ItemDefinition<Item> ROVI_HEAD = item("Rovi Head", Item::new);
-	public static final ItemDefinition<Item> ROVI_FRAME = item("Rovi Frame", Item::new);
+	public static final ItemDefinition<RoviHeadItem> ROVI_HEAD  = item("Rovi Head", RoviHeadItem::new);
+	public static final ItemDefinition<Item>         ROVI_FRAME = item("Rovi Frame", Item::new);
 	public static final ItemDefinition<Item> ROVI_ARM = item("Rovi Arm", Item::new);
 	public static final ItemDefinition<Item> ROVI_RUNNING_GEAR = item("Rovi Running Gear", Item::new);
 

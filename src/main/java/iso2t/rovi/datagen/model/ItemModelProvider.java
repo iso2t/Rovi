@@ -2,6 +2,7 @@ package iso2t.rovi.datagen.model;
 
 import iso2t.rovi.core.Rovi;
 import iso2t.rovi.core.definitions.RoviItems;
+import iso2t.rovi.helpers.models.IManualModel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
@@ -25,7 +26,7 @@ public final class ItemModelProvider extends ModelProviders {
 	@Override
 	protected void registerModels (@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
 		for (var item : RoviItems.getItems()) {
-			itemModels.generateFlatItem(item.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+			if (!(item.get() instanceof IManualModel)) itemModels.generateFlatItem(item.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 		}
 	}
 
@@ -39,7 +40,7 @@ public final class ItemModelProvider extends ModelProviders {
 	 */
 	@Override
 	protected @NotNull Stream<? extends Holder<Item>> getKnownItems () {
-		return BuiltInRegistries.ITEM.listElements().filter(holder -> holder.getKey().identifier().getNamespace().equals(Rovi.MODID)).filter(holder -> !(holder.value() instanceof BlockItem));
+		return BuiltInRegistries.ITEM.listElements().filter(holder -> holder.getKey().identifier().getNamespace().equals(Rovi.MODID)).filter(holder -> !(holder.value() instanceof BlockItem) && !(holder.value() instanceof IManualModel));
 	}
 
 }
