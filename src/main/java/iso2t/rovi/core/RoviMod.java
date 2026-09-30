@@ -20,6 +20,8 @@ import java.util.Collections;
 @AllArgsConstructor
 public abstract sealed class RoviMod implements Rovi permits RoviClient, RoviServer {
 
+	static Rovi INSTANCE;
+
 	@Getter
 	public IEventBus eventBus;
 
@@ -27,6 +29,9 @@ public abstract sealed class RoviMod implements Rovi permits RoviClient, RoviSer
 	public ModContainer modContainer;
 
 	public final void init () {
+		if (INSTANCE != null) throw new IllegalStateException("RoviMod already initialized");
+		INSTANCE = this;
+
 		RoviBlocks.REGISTRY.register(getEventBus());
 		RoviItems.REGISTRY.register(getEventBus());
 

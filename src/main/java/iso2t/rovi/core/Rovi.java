@@ -17,6 +17,10 @@ public interface Rovi {
 
 	Logger LOGGER = LoggerFactory.getLogger(NAME);
 
+	static Rovi getInstance() {
+		return RoviMod.INSTANCE;
+	}
+
 	static Path getGameDirectory () {
 		return FMLPaths.GAMEDIR.get();
 	}
