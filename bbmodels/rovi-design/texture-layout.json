@@ -1,0 +1,1845 @@
+{
+  "imageSize": [
+    256,
+    256
+  ],
+  "uvSize": [
+    128,
+    128
+  ],
+  "pixelsPerUVUnit": 2,
+  "tiles": [
+    {
+      "key": "ivory|CRT_Core|8,6,6",
+      "name": "CRT_Core",
+      "material": "ivory",
+      "size": [
+        8,
+        6,
+        6
+      ],
+      "w": 30,
+      "h": 14,
+      "offset": [
+        1,
+        1
+      ]
+    },
+    {
+      "key": "ivory|CRT_Side|1,6,6",
+      "name": "CRT_Left",
+      "material": "ivory",
+      "size": [
+        1,
+        6,
+        6
+      ],
+      "w": 16,
+      "h": 14,
+      "offset": [
+        31,
+        1
+      ]
+    },
+    {
+      "key": "trim|Drive_Deck|7,2,9",
+      "name": "Drive_Deck",
+      "material": "trim",
+      "size": [
+        7,
+        2,
+        9
+      ],
+      "w": 34,
+      "h": 13,
+      "offset": [
+        47,
+        1
+      ]
+    },
+    {
+      "key": "body|Chest_Core|6,3,5",
+      "name": "Chest_Core",
+      "material": "body",
+      "size": [
+        6,
+        3,
+        5
+      ],
+      "w": 24,
+      "h": 10,
+      "offset": [
+        81,
+        1
+      ]
+    },
+    {
+      "key": "ivory|CRT_Top|8,1,6",
+      "name": "CRT_Top",
+      "material": "ivory",
+      "size": [
+        8,
+        1,
+        6
+      ],
+      "w": 30,
+      "h": 9,
+      "offset": [
+        1,
+        15
+      ]
+    },
+    {
+      "key": "ivory|CRT_Bottom|8,1,6",
+      "name": "CRT_Bottom",
+      "material": "ivory",
+      "size": [
+        8,
+        1,
+        6
+      ],
+      "w": 30,
+      "h": 9,
+      "offset": [
+        31,
+        15
+      ]
+    },
+    {
+      "key": "body|CRT_Rear_Cap|8,6,1",
+      "name": "CRT_Rear_Cap",
+      "material": "body",
+      "size": [
+        8,
+        6,
+        1
+      ],
+      "w": 20,
+      "h": 9,
+      "offset": [
+        105,
+        1
+      ]
+    },
+    {
+      "key": "display|CRT_Display_Surface|8,6,1",
+      "name": "CRT_Display_Surface",
+      "material": "display",
+      "size": [
+        8,
+        6,
+        1
+      ],
+      "w": 20,
+      "h": 9,
+      "offset": [
+        61,
+        15
+      ]
+    },
+    {
+      "key": "track|Belt_Side_Top|3,1,6",
+      "name": "Belt_Left_Top",
+      "material": "track",
+      "size": [
+        3,
+        1,
+        6
+      ],
+      "w": 20,
+      "h": 9,
+      "offset": [
+        81,
+        15
+      ]
+    },
+    {
+      "key": "track|Belt_Side_Bottom|3,1,6",
+      "name": "Belt_Left_Bottom",
+      "material": "track",
+      "size": [
+        3,
+        1,
+        6
+      ],
+      "w": 20,
+      "h": 9,
+      "offset": [
+        101,
+        15
+      ]
+    },
+    {
+      "key": "ivory|CRT_Chamfer_Segment|1,1,6",
+      "name": "CRT_Chamfer_neg1_neg1",
+      "material": "ivory",
+      "size": [
+        1,
+        1,
+        6
+      ],
+      "w": 16,
+      "h": 9,
+      "offset": [
+        1,
+        24
+      ]
+    },
+    {
+      "key": "ivory|Bezel_Side|1,6,1",
+      "name": "Bezel_Left",
+      "material": "ivory",
+      "size": [
+        1,
+        6,
+        1
+      ],
+      "w": 6,
+      "h": 9,
+      "offset": [
+        121,
+        15
+      ]
+    },
+    {
+      "key": "trim|Glass_Rim_Side|1,6,1",
+      "name": "Glass_Rim_Left",
+      "material": "trim",
+      "size": [
+        1,
+        6,
+        1
+      ],
+      "w": 6,
+      "h": 9,
+      "offset": [
+        17,
+        24
+      ]
+    },
+    {
+      "key": "metal|Forearm_Piston_Side|1,1,5",
+      "name": "Forearm_Piston_Left",
+      "material": "metal",
+      "size": [
+        1,
+        1,
+        5
+      ],
+      "w": 14,
+      "h": 8,
+      "offset": [
+        23,
+        24
+      ]
+    },
+    {
+      "key": "ivory|Chest_Upper_Collar|4,1,4",
+      "name": "Chest_Upper_Collar",
+      "material": "ivory",
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "w": 18,
+      "h": 7,
+      "offset": [
+        37,
+        24
+      ]
+    },
+    {
+      "key": "rubber|CRT_Vent_Segment|1,1,4",
+      "name": "CRT_Vent_neg1_0",
+      "material": "rubber",
+      "size": [
+        1,
+        1,
+        4
+      ],
+      "w": 12,
+      "h": 7,
+      "offset": [
+        55,
+        24
+      ]
+    },
+    {
+      "key": "ivory|Forearm_Sleeve_Side|2,2,3",
+      "name": "Forearm_Sleeve_Left",
+      "material": "ivory",
+      "size": [
+        2,
+        2,
+        3
+      ],
+      "w": 12,
+      "h": 7,
+      "offset": [
+        67,
+        24
+      ]
+    },
+    {
+      "key": "ivory|Chest_Plate|6,3,1",
+      "name": "Chest_Plate",
+      "material": "ivory",
+      "size": [
+        6,
+        3,
+        1
+      ],
+      "w": 16,
+      "h": 6,
+      "offset": [
+        79,
+        24
+      ]
+    },
+    {
+      "key": "ivory|Rear_Port_Frame|4,3,1",
+      "name": "Rear_Port_Frame",
+      "material": "ivory",
+      "size": [
+        4,
+        3,
+        1
+      ],
+      "w": 12,
+      "h": 6,
+      "offset": [
+        95,
+        24
+      ]
+    },
+    {
+      "key": "rubber|Shoulder_Side_Segment|2,1,3",
+      "name": "Shoulder_Left_0",
+      "material": "rubber",
+      "size": [
+        2,
+        1,
+        3
+      ],
+      "w": 12,
+      "h": 6,
+      "offset": [
+        107,
+        24
+      ]
+    },
+    {
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3",
+      "name": "Wheel_Left_Front_Rubber_0",
+      "material": "rubber",
+      "size": [
+        2,
+        1,
+        3
+      ],
+      "w": 12,
+      "h": 6,
+      "offset": [
+        1,
+        33
+      ]
+    },
+    {
+      "key": "rubber|Neck_Post|2,2,2",
+      "name": "Neck_Post",
+      "material": "rubber",
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "w": 10,
+      "h": 6,
+      "offset": [
+        119,
+        24
+      ]
+    },
+    {
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3",
+      "name": "Wheel_Left_Front_Face_0",
+      "material": "metal",
+      "size": [
+        1,
+        1,
+        3
+      ],
+      "w": 10,
+      "h": 6,
+      "offset": [
+        13,
+        33
+      ]
+    },
+    {
+      "key": "cyan|Eye_Side|2,3,1",
+      "name": "Eye_Left",
+      "material": "cyan",
+      "size": [
+        2,
+        3,
+        1
+      ],
+      "w": 8,
+      "h": 6,
+      "offset": [
+        23,
+        33
+      ]
+    },
+    {
+      "key": "body|Gripper_Side_Jaw_Finger|1,2,2",
+      "name": "Gripper_Left_InnerX_Finger",
+      "material": "body",
+      "size": [
+        1,
+        2,
+        2
+      ],
+      "w": 8,
+      "h": 6,
+      "offset": [
+        31,
+        33
+      ]
+    },
+    {
+      "key": "track|Belt_Side_Corner_Segment|3,1,2",
+      "name": "Belt_Left_Corner_neg1_neg1",
+      "material": "track",
+      "size": [
+        3,
+        1,
+        2
+      ],
+      "w": 12,
+      "h": 5,
+      "offset": [
+        39,
+        33
+      ]
+    },
+    {
+      "key": "rubber|Rear_Port_Socket|3,2,1",
+      "name": "Rear_Port_Socket",
+      "material": "rubber",
+      "size": [
+        3,
+        2,
+        1
+      ],
+      "w": 10,
+      "h": 5,
+      "offset": [
+        51,
+        33
+      ]
+    },
+    {
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2",
+      "name": "Elbow_Collar_Left_0",
+      "material": "rubber",
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "w": 10,
+      "h": 5,
+      "offset": [
+        61,
+        33
+      ]
+    },
+    {
+      "key": "ivory|Gripper_Palm_Side|3,2,1",
+      "name": "Gripper_Palm_Left",
+      "material": "ivory",
+      "size": [
+        3,
+        2,
+        1
+      ],
+      "w": 10,
+      "h": 5,
+      "offset": [
+        71,
+        33
+      ]
+    },
+    {
+      "key": "track|Belt_Side_End_Segment|3,2,1",
+      "name": "Belt_Left_End_neg1",
+      "material": "track",
+      "size": [
+        3,
+        2,
+        1
+      ],
+      "w": 10,
+      "h": 5,
+      "offset": [
+        81,
+        33
+      ]
+    },
+    {
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2",
+      "name": "Wheel_Left_Middle_Rubber_0",
+      "material": "rubber",
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "w": 10,
+      "h": 5,
+      "offset": [
+        91,
+        33
+      ]
+    },
+    {
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2",
+      "name": "Shoulder_Cyan_Ring_Left_0",
+      "material": "cyan",
+      "size": [
+        1,
+        1,
+        2
+      ],
+      "w": 8,
+      "h": 5,
+      "offset": [
+        101,
+        33
+      ]
+    },
+    {
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2",
+      "name": "Shoulder_Cap_Left_0",
+      "material": "metal",
+      "size": [
+        1,
+        1,
+        2
+      ],
+      "w": 8,
+      "h": 5,
+      "offset": [
+        109,
+        33
+      ]
+    },
+    {
+      "key": "body|UpperArm_Shell_Side|2,2,1",
+      "name": "UpperArm_Shell_Left",
+      "material": "body",
+      "size": [
+        2,
+        2,
+        1
+      ],
+      "w": 8,
+      "h": 5,
+      "offset": [
+        117,
+        33
+      ]
+    },
+    {
+      "key": "cyan|Forearm_LED_Side|1,1,2",
+      "name": "Forearm_LED_Left",
+      "material": "cyan",
+      "size": [
+        1,
+        1,
+        2
+      ],
+      "w": 8,
+      "h": 5,
+      "offset": [
+        1,
+        39
+      ]
+    },
+    {
+      "key": "rubber|Wrist_Coupler_Side|2,2,1",
+      "name": "Wrist_Coupler_Left",
+      "material": "rubber",
+      "size": [
+        2,
+        2,
+        1
+      ],
+      "w": 8,
+      "h": 5,
+      "offset": [
+        9,
+        39
+      ]
+    },
+    {
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2",
+      "name": "Wheel_Left_Middle_Face_0",
+      "material": "metal",
+      "size": [
+        1,
+        1,
+        2
+      ],
+      "w": 8,
+      "h": 5,
+      "offset": [
+        17,
+        39
+      ]
+    },
+    {
+      "key": "cyan|Gripper_LED_Side|1,2,1",
+      "name": "Gripper_LED_Left",
+      "material": "cyan",
+      "size": [
+        1,
+        2,
+        1
+      ],
+      "w": 6,
+      "h": 5,
+      "offset": [
+        25,
+        39
+      ]
+    },
+    {
+      "key": "ivory|Bezel_Top|8,1,1",
+      "name": "Bezel_Top",
+      "material": "ivory",
+      "size": [
+        8,
+        1,
+        1
+      ],
+      "w": 20,
+      "h": 4,
+      "offset": [
+        31,
+        39
+      ]
+    },
+    {
+      "key": "ivory|Bezel_Bottom|8,1,1",
+      "name": "Bezel_Bottom",
+      "material": "ivory",
+      "size": [
+        8,
+        1,
+        1
+      ],
+      "w": 20,
+      "h": 4,
+      "offset": [
+        51,
+        39
+      ]
+    },
+    {
+      "key": "trim|Glass_Rim_Top|8,1,1",
+      "name": "Glass_Rim_Top",
+      "material": "trim",
+      "size": [
+        8,
+        1,
+        1
+      ],
+      "w": 20,
+      "h": 4,
+      "offset": [
+        71,
+        39
+      ]
+    },
+    {
+      "key": "trim|Glass_Rim_Bottom|8,1,1",
+      "name": "Glass_Rim_Bottom",
+      "material": "trim",
+      "size": [
+        8,
+        1,
+        1
+      ],
+      "w": 20,
+      "h": 4,
+      "offset": [
+        91,
+        39
+      ]
+    },
+    {
+      "key": "metal|Neck_Axle|6,1,1",
+      "name": "Neck_Axle",
+      "material": "metal",
+      "size": [
+        6,
+        1,
+        1
+      ],
+      "w": 16,
+      "h": 4,
+      "offset": [
+        111,
+        39
+      ]
+    },
+    {
+      "key": "rubber|Carry_Handle|5,1,1",
+      "name": "Carry_Handle",
+      "material": "rubber",
+      "size": [
+        5,
+        1,
+        1
+      ],
+      "w": 14,
+      "h": 4,
+      "offset": [
+        1,
+        44
+      ]
+    },
+    {
+      "key": "trim|Chest_LED_Recess|3,1,1",
+      "name": "Chest_LED_Recess",
+      "material": "trim",
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "w": 10,
+      "h": 4,
+      "offset": [
+        15,
+        44
+      ]
+    },
+    {
+      "key": "rubber|UpperArm_Link_Side|3,1,1",
+      "name": "UpperArm_Link_Left",
+      "material": "rubber",
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "w": 10,
+      "h": 4,
+      "offset": [
+        25,
+        44
+      ]
+    },
+    {
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1",
+      "name": "End_Tread_Left_neg1_0",
+      "material": "rubber",
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "w": 10,
+      "h": 4,
+      "offset": [
+        35,
+        44
+      ]
+    },
+    {
+      "key": "rubber|CRT_Rear_Vent_Segment|3,1,1",
+      "name": "CRT_Rear_Vent_neg2_0",
+      "material": "rubber",
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "w": 10,
+      "h": 4,
+      "offset": [
+        45,
+        44
+      ]
+    },
+    {
+      "key": "cyan|Chest_Status_LED|2,1,1",
+      "name": "Chest_Status_LED",
+      "material": "cyan",
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "w": 8,
+      "h": 4,
+      "offset": [
+        55,
+        44
+      ]
+    },
+    {
+      "key": "rubber|Chest_Vent_Segment|2,1,1",
+      "name": "Chest_Vent_0",
+      "material": "rubber",
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "w": 8,
+      "h": 4,
+      "offset": [
+        63,
+        44
+      ]
+    },
+    {
+      "key": "gold|Rear_Contact_-0.5_Segment|1,1,1",
+      "name": "Rear_Contact_neg0_5_5",
+      "material": "gold",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        71,
+        44
+      ]
+    },
+    {
+      "key": "gold|Rear_Contact_0.5_Segment|1,1,1",
+      "name": "Rear_Contact_0_5_5",
+      "material": "gold",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        77,
+        44
+      ]
+    },
+    {
+      "key": "ivory|Bezel_Corner_Segment|1,1,1",
+      "name": "Bezel_Corner_neg1_neg1",
+      "material": "ivory",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        83,
+        44
+      ]
+    },
+    {
+      "key": "rubber|Handle_Side_Foot|1,1,1",
+      "name": "Handle_Left_Foot",
+      "material": "rubber",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        89,
+        44
+      ]
+    },
+    {
+      "key": "rubber|Shoulder_Bolt_Side|1,1,1",
+      "name": "Shoulder_Bolt_Left",
+      "material": "rubber",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        95,
+        44
+      ]
+    },
+    {
+      "key": "rubber|Gripper_Side_Jaw_Pad|1,1,1",
+      "name": "Gripper_Left_InnerX_Pad",
+      "material": "rubber",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        101,
+        44
+      ]
+    },
+    {
+      "key": "trim|Wheel_Side_Outer_Hub|1,1,1",
+      "name": "Wheel_Left_Front_Hub",
+      "material": "trim",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        107,
+        44
+      ]
+    },
+    {
+      "key": "cyan|Wheel_Side_Middle_Hub|1,1,1",
+      "name": "Wheel_Left_Middle_Hub",
+      "material": "cyan",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "w": 6,
+      "h": 4,
+      "offset": [
+        113,
+        44
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "uuid": "82bbfae0-1240-3a6a-e639-ac88f1b9fac2",
+      "key": "trim|Drive_Deck|7,2,9"
+    },
+    {
+      "uuid": "5dccc626-323d-d6c4-9aab-ea37afee3f4c",
+      "key": "body|Chest_Core|6,3,5"
+    },
+    {
+      "uuid": "0fe7e1d5-4c11-e33b-94db-c355ff533c89",
+      "key": "ivory|Chest_Upper_Collar|4,1,4"
+    },
+    {
+      "uuid": "b08b74f9-adfd-6021-3e70-180c5bfc318e",
+      "key": "ivory|Chest_Plate|6,3,1"
+    },
+    {
+      "uuid": "0ff1ed90-667c-1083-699c-16d14e26fb41",
+      "key": "trim|Chest_LED_Recess|3,1,1"
+    },
+    {
+      "uuid": "87a513b1-dd74-cdde-ead0-e7550d07032b",
+      "key": "cyan|Chest_Status_LED|2,1,1"
+    },
+    {
+      "uuid": "a3138a18-050b-6d36-cf73-c5b9767ecfcc",
+      "key": "rubber|Chest_Vent_Segment|2,1,1"
+    },
+    {
+      "uuid": "b33b436c-dfa2-2670-5d62-8a3f26bd9509",
+      "key": "rubber|Chest_Vent_Segment|2,1,1"
+    },
+    {
+      "uuid": "5966e191-756f-9f8c-2949-06171f93fec3",
+      "key": "ivory|Rear_Port_Frame|4,3,1"
+    },
+    {
+      "uuid": "46b7ac7d-fbfd-e51b-789d-f481a4bf4821",
+      "key": "rubber|Rear_Port_Socket|3,2,1"
+    },
+    {
+      "uuid": "27d76992-0f39-6614-30a9-e3dc0005f2fb",
+      "key": "gold|Rear_Contact_-0.5_Segment|1,1,1"
+    },
+    {
+      "uuid": "fb884c84-c5ae-082c-d617-491eb55bfe49",
+      "key": "gold|Rear_Contact_-0.5_Segment|1,1,1"
+    },
+    {
+      "uuid": "574a85ed-27ce-616c-0974-bc0c7a864f61",
+      "key": "gold|Rear_Contact_0.5_Segment|1,1,1"
+    },
+    {
+      "uuid": "03dcbf9c-6177-d596-e629-a8471cdcc303",
+      "key": "gold|Rear_Contact_0.5_Segment|1,1,1"
+    },
+    {
+      "uuid": "903a599e-3c37-e88e-334e-fc2b0f43acf5",
+      "key": "rubber|Neck_Post|2,2,2"
+    },
+    {
+      "uuid": "f5ea1efd-e5b0-d6d6-59a1-d606a95f5b77",
+      "key": "metal|Neck_Axle|6,1,1"
+    },
+    {
+      "uuid": "b7148212-73f9-340c-5aa0-5a63bdb7104a",
+      "key": "ivory|CRT_Core|8,6,6"
+    },
+    {
+      "uuid": "e075502a-b284-41f4-6ac6-6ede123b0c08",
+      "key": "ivory|CRT_Top|8,1,6"
+    },
+    {
+      "uuid": "8bb18c39-6af7-fc70-8bc9-77c4f64b9698",
+      "key": "ivory|CRT_Bottom|8,1,6"
+    },
+    {
+      "uuid": "d1adc836-3b59-a6d6-1ab2-5465dabb4f84",
+      "key": "ivory|CRT_Side|1,6,6"
+    },
+    {
+      "uuid": "903aadbe-8fd4-b48a-b2ad-33ab876beef7",
+      "key": "ivory|CRT_Side|1,6,6"
+    },
+    {
+      "uuid": "76eebc19-1dfa-5b4f-f7d7-6d5e3f65dd6b",
+      "key": "body|CRT_Rear_Cap|8,6,1"
+    },
+    {
+      "uuid": "a0dd242a-1da1-3cec-74c1-c4ac11251da2",
+      "key": "ivory|CRT_Chamfer_Segment|1,1,6"
+    },
+    {
+      "uuid": "1edb560b-59bf-623e-de3f-a85c457ab80a",
+      "key": "ivory|Bezel_Corner_Segment|1,1,1"
+    },
+    {
+      "uuid": "47f9d2a9-351c-44c6-2e1d-18cb65d02ec5",
+      "key": "ivory|CRT_Chamfer_Segment|1,1,6"
+    },
+    {
+      "uuid": "bb5c85c0-d5d5-124f-4057-6dcd75535205",
+      "key": "ivory|Bezel_Corner_Segment|1,1,1"
+    },
+    {
+      "uuid": "dc6fc64a-f427-1ece-dd4c-81af3450b0c1",
+      "key": "ivory|CRT_Chamfer_Segment|1,1,6"
+    },
+    {
+      "uuid": "af98eab4-a9d1-99c9-138a-2eae2d68bd40",
+      "key": "ivory|Bezel_Corner_Segment|1,1,1"
+    },
+    {
+      "uuid": "c10e2da5-dfd5-8325-ce38-a0b9856b580c",
+      "key": "ivory|CRT_Chamfer_Segment|1,1,6"
+    },
+    {
+      "uuid": "a15a5d38-0f9c-0653-e990-a5d3c167ccc5",
+      "key": "ivory|Bezel_Corner_Segment|1,1,1"
+    },
+    {
+      "uuid": "e9bf9565-656d-c667-8c17-d9e01042c566",
+      "key": "ivory|Bezel_Top|8,1,1"
+    },
+    {
+      "uuid": "02a057a3-af3c-fc82-b4e1-79307a80be80",
+      "key": "ivory|Bezel_Bottom|8,1,1"
+    },
+    {
+      "uuid": "7960b573-cdd1-5b36-591a-c05b850b8ef9",
+      "key": "ivory|Bezel_Side|1,6,1"
+    },
+    {
+      "uuid": "ac27e820-7a0e-2d7b-213a-5eaea98363a8",
+      "key": "ivory|Bezel_Side|1,6,1"
+    },
+    {
+      "uuid": "2ce04257-6fa8-8e06-185d-154c2b88e922",
+      "key": "trim|Glass_Rim_Top|8,1,1"
+    },
+    {
+      "uuid": "4537bfc5-84b3-65cc-cbfd-e7d4b4616ff3",
+      "key": "trim|Glass_Rim_Bottom|8,1,1"
+    },
+    {
+      "uuid": "4768ea3e-da25-168a-92a1-98732d3f308a",
+      "key": "trim|Glass_Rim_Side|1,6,1"
+    },
+    {
+      "uuid": "d759bc24-3a2a-f855-4ec6-eb0c4f5ffa1f",
+      "key": "trim|Glass_Rim_Side|1,6,1"
+    },
+    {
+      "uuid": "a3e1ec63-e1ab-e8b3-ace2-9b34ef46adda",
+      "key": "display|CRT_Display_Surface|8,6,1"
+    },
+    {
+      "uuid": "5902f89b-cecd-537c-1898-6169c3ef053b",
+      "key": "cyan|Eye_Side|2,3,1"
+    },
+    {
+      "uuid": "2fd41ea1-357b-bdb5-f752-c3bc6d2186a5",
+      "key": "cyan|Eye_Side|2,3,1"
+    },
+    {
+      "uuid": "42d61819-ba30-cb5b-cffd-fa21c2c7ff4b",
+      "key": "rubber|CRT_Vent_Segment|1,1,4"
+    },
+    {
+      "uuid": "54695f0b-8a6c-89e3-d590-fbaf2dd8da40",
+      "key": "rubber|CRT_Vent_Segment|1,1,4"
+    },
+    {
+      "uuid": "cfab6642-b60d-bca3-eb90-74cf6d3d20a8",
+      "key": "rubber|CRT_Vent_Segment|1,1,4"
+    },
+    {
+      "uuid": "0fa26acc-f63b-62c1-505f-d44f0e68feac",
+      "key": "rubber|CRT_Vent_Segment|1,1,4"
+    },
+    {
+      "uuid": "324cbe16-51b6-ef5e-88bc-565fb266366c",
+      "key": "rubber|CRT_Vent_Segment|1,1,4"
+    },
+    {
+      "uuid": "c964115e-d4fd-d96e-eb2e-53f937caa1af",
+      "key": "rubber|CRT_Vent_Segment|1,1,4"
+    },
+    {
+      "uuid": "271c646a-2db0-14c3-fc0e-fb8ff69aed83",
+      "key": "rubber|Handle_Side_Foot|1,1,1"
+    },
+    {
+      "uuid": "7514ebb1-70f7-8c77-04b5-8e897d5fd9d4",
+      "key": "rubber|Handle_Side_Foot|1,1,1"
+    },
+    {
+      "uuid": "a4601533-cd9c-0155-b828-456cd123a36a",
+      "key": "rubber|Carry_Handle|5,1,1"
+    },
+    {
+      "uuid": "0bf820fe-fb00-9e8e-e472-5fa23d7c9222",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "3f351a46-331e-b247-e4e7-bfcf2d2ef16c",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "9f16fda9-fc86-929e-2e7b-2f1f88f84b7f",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "cb072ee1-076f-0133-9a95-d481bca4b41c",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "7dd7d070-01c9-e02c-4f02-b11bb826e2e5",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "b291bc5a-a51c-dcf3-af55-a48280194828",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "bec66034-cc6d-64ea-7c6f-24963f3a6fea",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "e7fbe74b-c980-270b-0eb2-7bbe0ac6686a",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "4f81fe75-73c6-72f0-ec42-46f1558cf7c3",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "d39d233e-56e5-3715-242b-e052d1451482",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "e09baba1-03be-41b2-1a45-bd13c23a51f5",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "b05c8f46-30ff-05e9-cb58-6df333fb8fce",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "2eed3ac1-90f2-aa00-c406-842fce164244",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "20ef60d0-0db9-365e-fd00-f2d821b25fd8",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "b13131bf-aa33-be8b-52e0-4b5ad881cba5",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "9ccdc218-4565-839f-94da-1330ca5c135b",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "4f3cc44b-dfc2-4903-ce26-bd90d2516d5b",
+      "key": "rubber|Shoulder_Bolt_Side|1,1,1"
+    },
+    {
+      "uuid": "ad16cd11-06ca-4cfb-42c8-81cb8ac82f68",
+      "key": "rubber|UpperArm_Link_Side|3,1,1"
+    },
+    {
+      "uuid": "400f761f-8ae5-e183-b067-61901538b691",
+      "key": "body|UpperArm_Shell_Side|2,2,1"
+    },
+    {
+      "uuid": "7d8e4962-f549-58c9-2d7c-2996eb5bdb22",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "7c6ba568-29f5-f199-c153-44ae7863e267",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "bc21f664-ab67-654a-9dc0-663a10303518",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "d3202d07-35dc-af76-6ebc-377f3fb67374",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "a4b73a30-bbe5-c5ec-a279-a63cfa225e34",
+      "key": "ivory|Forearm_Sleeve_Side|2,2,3"
+    },
+    {
+      "uuid": "34b9234b-eacf-07d9-3a6b-62cb6b6a3d12",
+      "key": "cyan|Forearm_LED_Side|1,1,2"
+    },
+    {
+      "uuid": "1c5e4f2f-7275-08f3-f471-9b5af0e51536",
+      "key": "metal|Forearm_Piston_Side|1,1,5"
+    },
+    {
+      "uuid": "ac34d976-9e13-986a-1f11-b48475ad3733",
+      "key": "rubber|Wrist_Coupler_Side|2,2,1"
+    },
+    {
+      "uuid": "74255ae9-a9c2-06e6-2135-78f6f5063514",
+      "key": "ivory|Gripper_Palm_Side|3,2,1"
+    },
+    {
+      "uuid": "48cfc21c-0d0d-f9cf-f315-209948f33a85",
+      "key": "cyan|Gripper_LED_Side|1,2,1"
+    },
+    {
+      "uuid": "56bfe756-2054-1827-3383-595c90c68321",
+      "key": "body|Gripper_Side_Jaw_Finger|1,2,2"
+    },
+    {
+      "uuid": "bafb8160-a84b-b7b1-aaf0-68caded55349",
+      "key": "rubber|Gripper_Side_Jaw_Pad|1,1,1"
+    },
+    {
+      "uuid": "f8fb8ffb-e0d2-ec00-2ad5-19a55f6dec10",
+      "key": "body|Gripper_Side_Jaw_Finger|1,2,2"
+    },
+    {
+      "uuid": "2865497c-4860-5289-b6f3-d090ee02364a",
+      "key": "rubber|Gripper_Side_Jaw_Pad|1,1,1"
+    },
+    {
+      "uuid": "bfcb6aa4-313f-0b4b-cce7-3faa13fc7041",
+      "key": "track|Belt_Side_Top|3,1,6"
+    },
+    {
+      "uuid": "2502b34d-4e8d-40bb-32f7-561ad5263a90",
+      "key": "track|Belt_Side_Bottom|3,1,6"
+    },
+    {
+      "uuid": "820fa024-0291-b748-1424-c83d5a2c9428",
+      "key": "track|Belt_Side_End_Segment|3,2,1"
+    },
+    {
+      "uuid": "f9e3a73f-9f92-c356-a991-d8b193e982d0",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "6a3e2bbd-9ac4-46ce-1c9c-20fc68403c08",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "a41cf937-1105-21df-1e7a-935c44b478b5",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "d9824f70-6bee-6c7c-4ef7-ae764275520d",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "6f5d2ace-eee4-36c4-f07c-726d0e78a1d1",
+      "key": "track|Belt_Side_End_Segment|3,2,1"
+    },
+    {
+      "uuid": "241fec17-c237-710e-4661-6b1e6996adba",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "f3ace3f6-633d-9f46-6df2-3453d01b7014",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "a092d0a0-f810-aa01-4d51-6bbd220f9206",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "cc1ced2c-8ebc-0a46-196a-4858501546ee",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "a8462901-9354-ed71-d544-5c6fbfb8d20f",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "213c0dd8-4d68-ca17-9dbe-39dd68a55720",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "b96ee454-48d0-3e24-d696-f0426402b23e",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "5bf7760b-0e36-003a-aace-e90b9281e238",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "66d00919-ddf6-e254-825e-1846569d8e86",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "3b281912-7a20-e04e-634b-7748dedd603f",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "a360ac1b-8a1a-16e1-7ce7-cdbe94cc2ed9",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "3a939238-d4ce-2935-4dea-66efca02159a",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "da9c1c87-de33-adbb-2082-596519390ff1",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "76168ad9-6bd1-5f86-d9a5-c276a2938928",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "9f5baca0-0285-28a0-eeaa-4c0ee667de61",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "f284927d-96bd-e8bb-da1e-48e4176e435d",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "bfcb848c-8750-0f23-e4fc-14d5377bf37b",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "89ea494d-1926-c81b-e477-4611f26d02c6",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "c321a1d9-4fa5-783a-7667-77475dfb63c4",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "79783eb2-9806-1a02-aff3-72cf70a090f6",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "6eeee7b0-caae-1e8d-5c93-da822e215027",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "7ab8dcc9-f6bb-da7f-599c-d7863912f47f",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "7cf6680d-0384-15b0-ea72-2a489dd0a0d2",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "9994c097-abd9-e649-541e-f5e7adc70ecb",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "dbd2aaa5-a271-8d22-2d2f-1f954494caa2",
+      "key": "trim|Wheel_Side_Outer_Hub|1,1,1"
+    },
+    {
+      "uuid": "f85a4d94-0b4c-54f5-f5ff-ce28e053f95c",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "5f0ba846-286c-50e4-cb80-a200465aafbb",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "c0520ae9-7653-c3a2-3698-b3792c015070",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "7bdbce10-2d4a-d4aa-08f6-6a9934667065",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "d2f793d1-74bc-bfdf-f22b-bf970ee04f63",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "43a95341-0123-189a-399a-e55250787fc0",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "2c546f37-14ba-b2c3-2339-0c44434cc7e7",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "7a93905b-52d2-9513-d342-68deacab4e3d",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "968cb96e-0c84-e580-db75-f6e0981601b5",
+      "key": "cyan|Wheel_Side_Middle_Hub|1,1,1"
+    },
+    {
+      "uuid": "9311279c-1b5e-e553-a20d-ddaa531c7760",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "4644a12e-e9af-edb1-beee-a7ece14600b4",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "06cdf647-029c-3423-0384-66d35027dcdf",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "2e069eb9-9080-4d4a-eba9-f6e46acc4475",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "cada73b9-4891-3c48-03fd-c62370cf80b4",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "7befaaac-c401-c172-1335-3c001191a937",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "5b74636b-da7a-a538-70f1-d4ea5197dd6c",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "6c9bc879-3ad1-cf5a-08e4-df049ffcc6a3",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "517c851c-9297-5190-bef5-d85f5ea16c82",
+      "key": "trim|Wheel_Side_Outer_Hub|1,1,1"
+    },
+    {
+      "uuid": "20fe4cfb-7b7b-cdae-ba41-673ec486e79b",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "7ddf341e-54f4-196c-2d75-66878df8fe86",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "fbd2282f-907f-b76a-2807-ae6601565425",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "948499ac-378f-9855-6f54-1ee85f1a864d",
+      "key": "rubber|Shoulder_Side_Segment|2,1,3"
+    },
+    {
+      "uuid": "0990c524-d3cb-c510-d397-e5315417ffc5",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "46faab08-c1b8-525d-120e-aafce02edfa9",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "9aae9777-ab8a-930e-760f-460a0d350384",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "486dd8f3-d602-974c-c578-ab9546879127",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "c2768b87-f5e3-6b3f-11a3-ad0b8dd7fb77",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "32fb000c-76d3-fe98-a347-70c1e436c162",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "2eb083c6-5392-12c9-c566-0563017a7c7a",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "f5ec35a4-3521-b2e1-924c-e5139887ffce",
+      "key": "cyan|Shoulder_Cyan_Ring_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "bb3f403d-c621-40f6-25ce-f5e8dbdeadea",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "0285afbc-e8ea-6ede-32ac-0f5df6de2d66",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "95063936-e133-b23b-921e-f3fc60a1f4bd",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "045c2cf1-88d4-0cf0-89a6-b5132bbce528",
+      "key": "metal|Shoulder_Cap_Side_Segment|1,1,2"
+    },
+    {
+      "uuid": "d52332f3-1995-5d02-9b07-ab172a3d3f12",
+      "key": "rubber|Shoulder_Bolt_Side|1,1,1"
+    },
+    {
+      "uuid": "f63fc756-2bf0-014b-c3fd-29b9d8c0837c",
+      "key": "rubber|UpperArm_Link_Side|3,1,1"
+    },
+    {
+      "uuid": "30c30e9e-bf83-ad74-365b-6244f2128435",
+      "key": "body|UpperArm_Shell_Side|2,2,1"
+    },
+    {
+      "uuid": "e2283d80-48ee-8228-5067-82405d4d70fb",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "88435ad6-bd25-9adf-24f9-125a8c3ec1d9",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "20a6dd25-0f0a-c7a3-2e9f-4afc7048c0cf",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "67b53277-beac-4a04-e1ec-964a5181dc8f",
+      "key": "rubber|Elbow_Collar_Side_Segment|2,1,2"
+    },
+    {
+      "uuid": "ebb52b35-f235-c0ca-88c6-5d42bb2e151d",
+      "key": "ivory|Forearm_Sleeve_Side|2,2,3"
+    },
+    {
+      "uuid": "e737f2f7-8832-a0f5-bf25-1df08eb3cc05",
+      "key": "cyan|Forearm_LED_Side|1,1,2"
+    },
+    {
+      "uuid": "bd6f0a3d-ae15-c512-ad83-d40bba0270a7",
+      "key": "metal|Forearm_Piston_Side|1,1,5"
+    },
+    {
+      "uuid": "7a4dcfdc-8dad-0945-2597-a311cbe19de4",
+      "key": "rubber|Wrist_Coupler_Side|2,2,1"
+    },
+    {
+      "uuid": "a1cfa656-30d0-f076-7e08-74f580afa113",
+      "key": "ivory|Gripper_Palm_Side|3,2,1"
+    },
+    {
+      "uuid": "bbe44fa6-7d9d-da44-6dfa-4aa568f6ab4a",
+      "key": "cyan|Gripper_LED_Side|1,2,1"
+    },
+    {
+      "uuid": "e7dbc2a5-aa3f-8804-a34b-403145628ce3",
+      "key": "body|Gripper_Side_Jaw_Finger|1,2,2"
+    },
+    {
+      "uuid": "dcacd8ad-83f2-0e79-ec9d-71bdecb4bb7f",
+      "key": "rubber|Gripper_Side_Jaw_Pad|1,1,1"
+    },
+    {
+      "uuid": "47481836-8737-d180-6f9e-1def40c52b71",
+      "key": "body|Gripper_Side_Jaw_Finger|1,2,2"
+    },
+    {
+      "uuid": "16f668b0-8c18-0c8e-7532-3d9198ed27db",
+      "key": "rubber|Gripper_Side_Jaw_Pad|1,1,1"
+    },
+    {
+      "uuid": "f84ce1d1-aced-2473-d1a6-d3faf83a812d",
+      "key": "track|Belt_Side_Top|3,1,6"
+    },
+    {
+      "uuid": "450e9873-67ee-70f5-58a6-c5609d778c9d",
+      "key": "track|Belt_Side_Bottom|3,1,6"
+    },
+    {
+      "uuid": "9b1546e0-d2ae-ad1c-2cdc-4eed375c0377",
+      "key": "track|Belt_Side_End_Segment|3,2,1"
+    },
+    {
+      "uuid": "f33340a7-4986-2e26-adb2-61c2f75d2f79",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "052ee1c2-0896-ed11-e49b-8b23081af641",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "c71d2190-46ac-9816-986b-453114634d4e",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "8c7f99b2-f6bb-35c9-b8fc-14256a41a358",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "60897af3-cf20-71f8-6593-3bf11c49916b",
+      "key": "track|Belt_Side_End_Segment|3,2,1"
+    },
+    {
+      "uuid": "ee98e402-b114-6531-7fec-b38d4ebffa65",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "8d891455-fef1-998e-7d45-5ae99498fe58",
+      "key": "track|Belt_Side_Corner_Segment|3,1,2"
+    },
+    {
+      "uuid": "218c0f1d-41f2-fa32-e1d5-ccae46a87ee9",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "92a05bf6-78d1-352e-2e16-232992afc85d",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "8a16a44a-9631-2fc7-7fc7-0854c0e5ea94",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "ce3a8883-5b3e-b6be-46dd-5f6888a08ffd",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "b1def2fd-db87-7c3a-d08f-39fcfdb0aa06",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "f6a00bc7-092f-444d-c615-814190f97fbb",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "69c123aa-f88f-c4bd-0b32-2417a1c25510",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "5df23770-640c-8d1b-63d5-293b3d8f3db8",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "f98796be-d26a-215f-9b21-e7b501f89652",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "f69033d4-35da-6746-0544-4addfd1db3a8",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "8fe3fec3-006c-e68c-cca5-79d5bacddad2",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "c24affd1-1199-ef66-a82c-7188822d8d95",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "9c602619-0b1a-fab1-b1d6-c58e2d921ff6",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "e7d65917-7a29-d2ff-b827-95350dc90372",
+      "key": "rubber|Raised_Tread_Side_Segment|3,1,1"
+    },
+    {
+      "uuid": "848d0106-05b1-6f25-9c80-69f72e2b5d9f",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "d020817b-673f-a76b-b6e5-9aec22543a24",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "a4fe9231-f7dc-9266-b4c3-70feb4073cb4",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "20f7d910-d911-a813-fed4-aa699828b22d",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "208b318a-a836-3b66-4705-d2335e879c26",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "777ea0ec-e1dd-88d3-123e-819fbb2457f3",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "d3af7579-9671-ff97-bdcc-fc3042c465fb",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "b04d7ac6-9ea1-8639-3a4d-f5aa5db4d2ca",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "291d31e1-a86d-b230-0297-b485f390d0f9",
+      "key": "trim|Wheel_Side_Outer_Hub|1,1,1"
+    },
+    {
+      "uuid": "77ff179a-ad24-a4f0-543d-954f06955a48",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "7d9aa75b-bddb-24c9-6c2c-5ec553aedec0",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "1355bec8-df90-c3f7-875e-989457a51a88",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "f62459bc-4a8f-bb59-6231-352603388796",
+      "key": "rubber|Wheel_Side_Middle_Rubber_Segment|2,1,2"
+    },
+    {
+      "uuid": "5f817cd0-e169-eb48-9d99-ce95d13e2ed6",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "fc8b51d1-5c37-4633-6ebe-d74d219f1367",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "0b2c7345-04c3-06c5-b31a-663e9ef98500",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "df911411-5086-c54e-cd26-14b724dc0876",
+      "key": "metal|Wheel_Side_Middle_Face_Segment|1,1,2"
+    },
+    {
+      "uuid": "38157bf7-92b4-62ad-d545-9ac8135390e6",
+      "key": "cyan|Wheel_Side_Middle_Hub|1,1,1"
+    },
+    {
+      "uuid": "bbe0afa1-163d-c86c-28ad-2e189930fe92",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "77ee846b-f9b3-3c72-4ffd-4d57c861289d",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "b7b24d0d-6fe8-2df7-3a3d-493f34f7c871",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "eaa0dae7-4f1e-4ffa-cf6a-ab9e8dfe0ae9",
+      "key": "rubber|Wheel_Side_Outer_Rubber_Segment|2,1,3"
+    },
+    {
+      "uuid": "65db13d3-ed36-5a57-6934-8de19a7ab5db",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "f76effed-94d2-97c3-653b-467aaca4bd1f",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "94219560-fd05-3c0a-a05d-a13f6cc4c8f8",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "a4a490e5-e945-5648-bf6a-97b4521c70b2",
+      "key": "metal|Wheel_Side_Outer_Face_Segment|1,1,3"
+    },
+    {
+      "uuid": "5239d2cd-4648-bd06-1148-5748f6ee5c37",
+      "key": "trim|Wheel_Side_Outer_Hub|1,1,1"
+    },
+    {
+      "uuid": "60068963-130e-0df2-a32c-f3580ccbe25f",
+      "key": "rubber|CRT_Rear_Vent_Segment|3,1,1"
+    },
+    {
+      "uuid": "19bcf414-1b4f-1979-1f8d-fc45c7970a31",
+      "key": "rubber|CRT_Rear_Vent_Segment|3,1,1"
+    },
+    {
+      "uuid": "6cb784de-9e47-dabb-86a0-53c0c42229fe",
+      "key": "rubber|CRT_Rear_Vent_Segment|3,1,1"
+    },
+    {
+      "uuid": "ae667650-a0f2-cc46-2fe4-84424b01c661",
+      "key": "rubber|CRT_Rear_Vent_Segment|3,1,1"
+    },
+    {
+      "uuid": "1f644706-3050-8858-c2be-5ac8f406cc78",
+      "key": "rubber|CRT_Rear_Vent_Segment|3,1,1"
+    },
+    {
+      "uuid": "a1a38149-1853-de93-f76b-696c32eb6601",
+      "key": "rubber|CRT_Rear_Vent_Segment|3,1,1"
+    }
+  ],
+  "screenRegion": [
+    62,
+    16,
+    70,
+    22
+  ]
+}

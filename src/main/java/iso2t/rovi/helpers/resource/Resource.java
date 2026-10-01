@@ -10,6 +10,9 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.fml.loading.FMLPaths;
+
+import java.nio.file.Path;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class Resource {
@@ -44,6 +47,18 @@ public final class Resource {
 
 	public static Identifier getFromBlock (BlockDefinition<?> block) {
 		return Resource.getFromBlock(block.get());
+	}
+
+	public static Path getGameDirectory () {
+		return FMLPaths.GAMEDIR.get();
+	}
+
+	public static Path getConfigDirectory () {
+		return FMLPaths.CONFIGDIR.get();
+	}
+
+	public static Path getModsDirectory () {
+		return FMLPaths.MODSDIR.get();
 	}
 
 }

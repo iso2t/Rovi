@@ -2,7 +2,7 @@ package iso2t.rovi.datagen.model;
 
 import iso2t.rovi.core.Rovi;
 import iso2t.rovi.core.definitions.BlockDefinition;
-import iso2t.rovi.core.definitions.RoviBlocks;
+import iso2t.rovi.core.registries.RoviBlocks;
 import iso2t.rovi.helpers.models.IManualModel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;

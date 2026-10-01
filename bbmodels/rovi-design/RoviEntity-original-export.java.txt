@@ -1,0 +1,291 @@
+package iso2t.rovi.entity;// Made with Blockbench 5.2.1
+// Exported for Minecraft version 1.17 or later with Mojang mappings
+// Paste this class into your mod and generate all required imports
+
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import iso2t.rovi.helpers.resource.Resource;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.geom.PartPose;
+import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.world.entity.Entity;
+
+public class RoviEntity<T extends Entity> extends EntityModel<T> {
+	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(Resource.get("rovientity"), "main");
+	private final       ModelPart          Chassis;
+	private final       ModelPart          Track_Right;
+	private final       ModelPart          Wheel_Right_Rear;
+	private final       ModelPart          Wheel_Right_Middle;
+	private final       ModelPart          Wheel_Right_Front;
+	private final       ModelPart          Arm_Right;
+	private final       ModelPart          UpperArm_Right;
+	private final       ModelPart          Elbow_Right;
+	private final       ModelPart          Arm_Right_Extend;
+	private final       ModelPart          Wrist_Right_Module;
+	private final       ModelPart          Gripper_Right;
+	private final       ModelPart          Gripper_Right_OuterX;
+	private final       ModelPart          Gripper_Right_InnerX;
+	private final       ModelPart          Track_Left;
+	private final       ModelPart          Wheel_Left_Rear;
+	private final       ModelPart          Wheel_Left_Middle;
+	private final       ModelPart          Wheel_Left_Front;
+	private final       ModelPart          Arm_Left;
+	private final       ModelPart          UpperArm_Left;
+	private final       ModelPart          Elbow_Left;
+	private final       ModelPart          Arm_Left_Extend;
+	private final       ModelPart          Wrist_Left_Module;
+	private final       ModelPart          Gripper_Left;
+	private final       ModelPart          Gripper_Left_OuterX;
+	private final       ModelPart          Gripper_Left_InnerX;
+	private final       ModelPart          Head;
+	private final       ModelPart          Screen_Display;
+	private final       ModelPart          Neck_Hinge;
+	private final       ModelPart          Body;
+	private final       ModelPart          Chest_Front;
+	private final       ModelPart          Rear_Module_Mount;
+	private final       ModelPart          bb_main;
+
+	public RoviEntity (ModelPart root) {
+		super(root);
+
+		this.Chassis = root.getChild("Chassis");
+		this.Track_Right = this.Chassis.getChild("Track_Right");
+		this.Wheel_Right_Rear = this.Track_Right.getChild("Wheel_Right_Rear");
+		this.Wheel_Right_Middle = this.Track_Right.getChild("Wheel_Right_Middle");
+		this.Wheel_Right_Front = this.Track_Right.getChild("Wheel_Right_Front");
+		this.Arm_Right = this.Chassis.getChild("Arm_Right");
+		this.UpperArm_Right = this.Arm_Right.getChild("UpperArm_Right");
+		this.Elbow_Right = this.UpperArm_Right.getChild("Elbow_Right");
+		this.Arm_Right_Extend = this.Elbow_Right.getChild("Arm_Right_Extend");
+		this.Wrist_Right_Module = this.Arm_Right_Extend.getChild("Wrist_Right_Module");
+		this.Gripper_Right = this.Wrist_Right_Module.getChild("Gripper_Right");
+		this.Gripper_Right_OuterX = this.Gripper_Right.getChild("Gripper_Right_OuterX");
+		this.Gripper_Right_InnerX = this.Gripper_Right.getChild("Gripper_Right_InnerX");
+		this.Track_Left = this.Chassis.getChild("Track_Left");
+		this.Wheel_Left_Rear = this.Track_Left.getChild("Wheel_Left_Rear");
+		this.Wheel_Left_Middle = this.Track_Left.getChild("Wheel_Left_Middle");
+		this.Wheel_Left_Front = this.Track_Left.getChild("Wheel_Left_Front");
+		this.Arm_Left = this.Chassis.getChild("Arm_Left");
+		this.UpperArm_Left = this.Arm_Left.getChild("UpperArm_Left");
+		this.Elbow_Left = this.UpperArm_Left.getChild("Elbow_Left");
+		this.Arm_Left_Extend = this.Elbow_Left.getChild("Arm_Left_Extend");
+		this.Wrist_Left_Module = this.Arm_Left_Extend.getChild("Wrist_Left_Module");
+		this.Gripper_Left = this.Wrist_Left_Module.getChild("Gripper_Left");
+		this.Gripper_Left_OuterX = this.Gripper_Left.getChild("Gripper_Left_OuterX");
+		this.Gripper_Left_InnerX = this.Gripper_Left.getChild("Gripper_Left_InnerX");
+		this.Head = this.Chassis.getChild("Head");
+		this.Screen_Display = this.Head.getChild("Screen_Display");
+		this.Neck_Hinge = this.Chassis.getChild("Neck_Hinge");
+		this.Body = this.Chassis.getChild("Body");
+		this.Chest_Front = this.Body.getChild("Chest_Front");
+		this.Rear_Module_Mount = this.Body.getChild("Rear_Module_Mount");
+		this.bb_main = root.getChild("bb_main");
+	}
+
+	public static LayerDefinition createBodyLayer () {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition Chassis = partdefinition.addOrReplaceChild("Chassis", CubeListBuilder.create().texOffs(47, 1).addBox(-3.5F, -4.0F, -4.5F, 7.0F, 2.0F, 9.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+
+		PartDefinition Track_Right = Chassis.addOrReplaceChild("Track_Right", CubeListBuilder.create().texOffs(81, 15).addBox(-1.5F, -2.0F, -3.0F, 3.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(101, 15).addBox(-1.5F, 1.0F, -3.0F, 3.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(81, 33).addBox(-1.5F, -1.0F, -5.0F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(35, 44).addBox(-1.5F, 0.0F, -5.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -1.0F, -5.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(81, 33).addBox(-1.5F, -1.0F, 4.0F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(35, 44).addBox(-1.5F, 0.0F, 4.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -1.0F, 4.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, -3.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, -3.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, -2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, -2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, -1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, -1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, 0.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, 0.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, 1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, 1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, 2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, 2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offset(-5.0F, -2.0F, 0.0F));
+
+		PartDefinition Belt_Right_Corner_1_1_r1 = Track_Right.addOrReplaceChild("Belt_Right_Corner_1_1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, 4.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Belt_Right_Corner_1_ -1_
+		r1 = Track_Right.addOrReplaceChild("Belt_Right_Corner_1_-1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 1.0F, 4.0F, 0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Belt_Right_Corner_ -1_1_
+		r1 = Track_Right.addOrReplaceChild("Belt_Right_Corner_-1_1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, -4.0F, 0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Belt_Right_Corner_ -1_ - 1_
+		r1 = Track_Right.addOrReplaceChild("Belt_Right_Corner_-1_-1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 1.0F, -4.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Rear = Track_Right.addOrReplaceChild("Wheel_Right_Rear", CubeListBuilder.create().texOffs(1, 33).addBox(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(13, 33).addBox(-2.0F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(107, 44).addBox(-2.55F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, 0.0F, 3.0F));
+
+		PartDefinition Wheel_Right_Rear_Face_3_r1 = Wheel_Right_Rear.addOrReplaceChild("Wheel_Right_Rear_Face_3_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(0.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Rear_Face_2_r1 = Wheel_Right_Rear.addOrReplaceChild("Wheel_Right_Rear_Face_2_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(0.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Rear_Face_1_r1 = Wheel_Right_Rear.addOrReplaceChild("Wheel_Right_Rear_Face_1_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(0.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Middle = Track_Right.addOrReplaceChild("Wheel_Right_Middle", CubeListBuilder.create().texOffs(91, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(17, 39).addBox(-2.0F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(113, 44).addBox(-2.55F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Middle_Face_3_r1 = Wheel_Right_Middle.addOrReplaceChild("Wheel_Right_Middle_Face_3_r1", CubeListBuilder.create().texOffs(17, 39).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(91, 33).addBox(0.5F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Middle_Face_2_r1 = Wheel_Right_Middle.addOrReplaceChild("Wheel_Right_Middle_Face_2_r1", CubeListBuilder.create().texOffs(17, 39).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(91, 33).addBox(0.5F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Middle_Face_1_r1 = Wheel_Right_Middle.addOrReplaceChild("Wheel_Right_Middle_Face_1_r1", CubeListBuilder.create().texOffs(17, 39).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(91, 33).addBox(0.5F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Front = Track_Right.addOrReplaceChild("Wheel_Right_Front", CubeListBuilder.create().texOffs(1, 33).addBox(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(13, 33).addBox(-2.0F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(107, 44).addBox(-2.55F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, 0.0F, -3.0F));
+
+		PartDefinition Wheel_Right_Front_Face_3_r1 = Wheel_Right_Front.addOrReplaceChild("Wheel_Right_Front_Face_3_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(0.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Front_Face_2_r1 = Wheel_Right_Front.addOrReplaceChild("Wheel_Right_Front_Face_2_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(0.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Right_Front_Face_1_r1 = Wheel_Right_Front.addOrReplaceChild("Wheel_Right_Front_Face_1_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(0.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.5F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Arm_Right = Chassis.addOrReplaceChild("Arm_Right", CubeListBuilder.create().texOffs(107, 24).addBox(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(101, 33).addBox(-1.75F, -1.8F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)).texOffs(109, 33).addBox(-1.875F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(95, 44).addBox(-2.25F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(-4.0F, -6.5F, 0.5F));
+
+		PartDefinition Shoulder_Cap_Right_3_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cap_Right_3_r1", CubeListBuilder.create().texOffs(109, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(107, 24).addBox(0.375F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.375F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cap_Right_2_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cap_Right_2_r1", CubeListBuilder.create().texOffs(109, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(107, 24).addBox(0.375F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.375F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cap_Right_1_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cap_Right_1_r1", CubeListBuilder.create().texOffs(109, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(107, 24).addBox(0.375F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-1.375F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Right_7_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cyan_Ring_Right_7_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-1.25F, -0.9192F, -0.9192F, -5.4978F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Right_6_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cyan_Ring_Right_6_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-1.25F, 0.0F, -1.3F, -4.7124F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Right_5_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cyan_Ring_Right_5_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-1.25F, 0.9192F, -0.9192F, -3.927F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Right_4_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cyan_Ring_Right_4_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-1.25F, 1.3F, 0.0F, -3.1416F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Right_3_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cyan_Ring_Right_3_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-1.25F, 0.9192F, 0.9192F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Right_2_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cyan_Ring_Right_2_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-1.25F, 0.0F, 1.3F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Right_1_r1 = Arm_Right.addOrReplaceChild("Shoulder_Cyan_Ring_Right_1_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-1.25F, -0.9192F, 0.9192F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition UpperArm_Right = Arm_Right.addOrReplaceChild("UpperArm_Right", CubeListBuilder.create().texOffs(25, 44).addBox(-3.0F, 0.0F, -0.5F, 3.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(117, 33).addBox(-2.5F, -0.5F, -0.5F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.2094F));
+
+		PartDefinition Elbow_Right = UpperArm_Right.addOrReplaceChild("Elbow_Right", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(67, 24).addBox(-1.0F, -1.0F, -3.0F, 2.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(1, 39).addBox(-0.5F, -1.5F, -2.5F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(-2.5F, 0.5F, 0.0F, 0.0F, 0.4363F, 0.0F));
+
+		PartDefinition Elbow_Collar_Right_3_r1 = Elbow_Right.addOrReplaceChild("Elbow_Collar_Right_3_r1", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Elbow_Collar_Right_2_r1 = Elbow_Right.addOrReplaceChild("Elbow_Collar_Right_2_r1", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Elbow_Collar_Right_1_r1 = Elbow_Right.addOrReplaceChild("Elbow_Collar_Right_1_r1", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Arm_Right_Extend = Elbow_Right.addOrReplaceChild("Arm_Right_Extend", CubeListBuilder.create().texOffs(23, 24).addBox(-0.5F, -0.5F, -5.0F, 1.0F, 1.0F, 5.0F, new CubeDeformation(-0.125F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Wrist_Right_Module = Arm_Right_Extend.addOrReplaceChild("Wrist_Right_Module", CubeListBuilder.create().texOffs(9, 39).addBox(-1.0F, -1.0F, 0.5F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, -5.5F));
+
+		PartDefinition Gripper_Right = Wrist_Right_Module.addOrReplaceChild("Gripper_Right", CubeListBuilder.create().texOffs(71, 33).addBox(-1.5F, -1.0F, -0.5F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(25, 39).addBox(-0.5F, -1.0F, -1.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.375F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Gripper_Right_OuterX = Gripper_Right.addOrReplaceChild("Gripper_Right_OuterX", CubeListBuilder.create().texOffs(31, 33).addBox(-0.5F, -1.0F, -1.875F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.0625F)).texOffs(101, 44).addBox(-0.375F, -0.5F, -2.125F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offset(-1.0F, 0.0F, -0.5F));
+
+		PartDefinition Gripper_Right_InnerX = Gripper_Right.addOrReplaceChild("Gripper_Right_InnerX", CubeListBuilder.create().texOffs(31, 33).addBox(-0.5F, -1.0F, -1.875F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.0625F)).texOffs(101, 44).addBox(-0.625F, -0.5F, -2.125F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offset(1.0F, 0.0F, -0.5F));
+
+		PartDefinition Track_Left = Chassis.addOrReplaceChild("Track_Left", CubeListBuilder.create().texOffs(81, 15).addBox(-1.5F, -2.0F, -3.0F, 3.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(101, 15).addBox(-1.5F, 1.0F, -3.0F, 3.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(81, 33).addBox(-1.5F, -1.0F, -5.0F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(35, 44).addBox(-1.5F, 0.0F, -5.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -1.0F, -5.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(81, 33).addBox(-1.5F, -1.0F, 4.0F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(35, 44).addBox(-1.5F, 0.0F, 4.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -1.0F, 4.125F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, -3.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, -3.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, -2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, -2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, -1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, -1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, 0.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, 0.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, 1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, 1.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, -2.25F, 2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)).texOffs(35, 44).addBox(-1.5F, 1.125F, 2.0F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offset(5.0F, -2.0F, 0.0F));
+
+		PartDefinition Belt_Left_Corner_1_1_r1 = Track_Left.addOrReplaceChild("Belt_Left_Corner_1_1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, 4.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Belt_Left_Corner_1_ -1_
+		r1 = Track_Left.addOrReplaceChild("Belt_Left_Corner_1_-1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 1.0F, 4.0F, 0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Belt_Left_Corner_ -1_1_
+		r1 = Track_Left.addOrReplaceChild("Belt_Left_Corner_-1_1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, -4.0F, 0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Belt_Left_Corner_ -1_ - 1_
+		r1 = Track_Left.addOrReplaceChild("Belt_Left_Corner_-1_-1_r1", CubeListBuilder.create().texOffs(39, 33).addBox(-1.5F, -0.5F, -1.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 1.0F, -4.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Rear = Track_Left.addOrReplaceChild("Wheel_Left_Rear", CubeListBuilder.create().texOffs(1, 33).addBox(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(13, 33).addBox(1.0F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(107, 44).addBox(1.55F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, 0.0F, 3.0F));
+
+		PartDefinition Wheel_Left_Rear_Face_3_r1 = Wheel_Left_Rear.addOrReplaceChild("Wheel_Left_Rear_Face_3_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(-2.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Rear_Face_2_r1 = Wheel_Left_Rear.addOrReplaceChild("Wheel_Left_Rear_Face_2_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(-2.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Rear_Face_1_r1 = Wheel_Left_Rear.addOrReplaceChild("Wheel_Left_Rear_Face_1_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(-2.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Middle = Track_Left.addOrReplaceChild("Wheel_Left_Middle", CubeListBuilder.create().texOffs(91, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(17, 39).addBox(1.0F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(113, 44).addBox(1.55F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Middle_Face_3_r1 = Wheel_Left_Middle.addOrReplaceChild("Wheel_Left_Middle_Face_3_r1", CubeListBuilder.create().texOffs(17, 39).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(91, 33).addBox(-2.5F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Middle_Face_2_r1 = Wheel_Left_Middle.addOrReplaceChild("Wheel_Left_Middle_Face_2_r1", CubeListBuilder.create().texOffs(17, 39).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(91, 33).addBox(-2.5F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Middle_Face_1_r1 = Wheel_Left_Middle.addOrReplaceChild("Wheel_Left_Middle_Face_1_r1", CubeListBuilder.create().texOffs(17, 39).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(91, 33).addBox(-2.5F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Front = Track_Left.addOrReplaceChild("Wheel_Left_Front", CubeListBuilder.create().texOffs(1, 33).addBox(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(13, 33).addBox(1.0F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(107, 44).addBox(1.55F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, 0.0F, -3.0F));
+
+		PartDefinition Wheel_Left_Front_Face_3_r1 = Wheel_Left_Front.addOrReplaceChild("Wheel_Left_Front_Face_3_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(-2.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Front_Face_2_r1 = Wheel_Left_Front.addOrReplaceChild("Wheel_Left_Front_Face_2_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(-2.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Wheel_Left_Front_Face_1_r1 = Wheel_Left_Front.addOrReplaceChild("Wheel_Left_Front_Face_1_r1", CubeListBuilder.create().texOffs(13, 33).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(1, 33).addBox(-2.5F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.5F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Arm_Left = Chassis.addOrReplaceChild("Arm_Left", CubeListBuilder.create().texOffs(107, 24).addBox(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)).texOffs(101, 33).addBox(0.75F, -1.8F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)).texOffs(109, 33).addBox(0.875F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(95, 44).addBox(1.25F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(4.0F, -6.5F, 0.5F));
+
+		PartDefinition Shoulder_Cap_Left_3_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cap_Left_3_r1", CubeListBuilder.create().texOffs(109, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(107, 24).addBox(-2.375F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.375F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cap_Left_2_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cap_Left_2_r1", CubeListBuilder.create().texOffs(109, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(107, 24).addBox(-2.375F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.375F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cap_Left_1_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cap_Left_1_r1", CubeListBuilder.create().texOffs(109, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(107, 24).addBox(-2.375F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(1.375F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Left_7_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cyan_Ring_Left_7_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(1.25F, -0.9192F, -0.9192F, -5.4978F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Left_6_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cyan_Ring_Left_6_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(1.25F, 0.0F, -1.3F, -4.7124F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Left_5_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cyan_Ring_Left_5_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(1.25F, 0.9192F, -0.9192F, -3.927F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Left_4_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cyan_Ring_Left_4_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(1.25F, 1.3F, 0.0F, -3.1416F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Left_3_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cyan_Ring_Left_3_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(1.25F, 0.9192F, 0.9192F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Left_2_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cyan_Ring_Left_2_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(1.25F, 0.0F, 1.3F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Shoulder_Cyan_Ring_Left_1_r1 = Arm_Left.addOrReplaceChild("Shoulder_Cyan_Ring_Left_1_r1", CubeListBuilder.create().texOffs(101, 33).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(1.25F, -0.9192F, 0.9192F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition UpperArm_Left = Arm_Left.addOrReplaceChild("UpperArm_Left", CubeListBuilder.create().texOffs(25, 44).addBox(0.0F, 0.0F, -0.5F, 3.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(117, 33).addBox(0.5F, -0.5F, -0.5F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2094F));
+
+		PartDefinition Elbow_Left = UpperArm_Left.addOrReplaceChild("Elbow_Left", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)).texOffs(67, 24).addBox(-1.0F, -1.0F, -3.0F, 2.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(1, 39).addBox(-0.5F, -1.5F, -2.5F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(2.5F, 0.5F, 0.0F, 0.0F, -0.4363F, 0.0F));
+
+		PartDefinition Elbow_Collar_Left_3_r1 = Elbow_Left.addOrReplaceChild("Elbow_Collar_Left_3_r1", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -2.3562F, 0.0F, 0.0F));
+
+		PartDefinition Elbow_Collar_Left_2_r1 = Elbow_Left.addOrReplaceChild("Elbow_Collar_Left_2_r1", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Elbow_Collar_Left_1_r1 = Elbow_Left.addOrReplaceChild("Elbow_Collar_Left_1_r1", CubeListBuilder.create().texOffs(61, 33).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1464F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition Arm_Left_Extend = Elbow_Left.addOrReplaceChild("Arm_Left_Extend", CubeListBuilder.create().texOffs(23, 24).addBox(-0.5F, -0.5F, -5.0F, 1.0F, 1.0F, 5.0F, new CubeDeformation(-0.125F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Wrist_Left_Module = Arm_Left_Extend.addOrReplaceChild("Wrist_Left_Module", CubeListBuilder.create().texOffs(9, 39).addBox(-1.0F, -1.0F, 0.5F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, -5.5F));
+
+		PartDefinition Gripper_Left = Wrist_Left_Module.addOrReplaceChild("Gripper_Left", CubeListBuilder.create().texOffs(71, 33).addBox(-1.5F, -1.0F, -0.5F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(25, 39).addBox(-0.5F, -1.0F, -1.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.375F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Gripper_Left_OuterX = Gripper_Left.addOrReplaceChild("Gripper_Left_OuterX", CubeListBuilder.create().texOffs(31, 33).addBox(-0.5F, -1.0F, -1.875F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.0625F)).texOffs(101, 44).addBox(-0.375F, -0.5F, -2.125F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offset(-1.0F, 0.0F, -0.5F));
+
+		PartDefinition Gripper_Left_InnerX = Gripper_Left.addOrReplaceChild("Gripper_Left_InnerX", CubeListBuilder.create().texOffs(31, 33).addBox(-0.5F, -1.0F, -1.875F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.0625F)).texOffs(101, 44).addBox(-0.625F, -0.5F, -2.125F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.0625F)), PartPose.offset(1.0F, 0.0F, -0.5F));
+
+		PartDefinition Head = Chassis.addOrReplaceChild("Head", CubeListBuilder.create().texOffs(1, 1).addBox(-4.0F, -6.5F, -3.5F, 8.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(1, 15).addBox(-4.0F, -7.5F, -3.5F, 8.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(31, 15).addBox(-4.0F, -0.5F, -3.5F, 8.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(31, 1).addBox(4.0F, -6.5F, -3.5F, 1.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(31, 1).addBox(-5.0F, -6.5F, -3.5F, 1.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(105, 1).addBox(-4.0F, -6.5F, 2.5F, 8.0F, 6.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(31, 39).addBox(-4.0F, -7.5F, -4.5F, 8.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(51, 39).addBox(-4.0F, -0.5F, -4.5F, 8.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(121, 15).addBox(4.0F, -6.5F, -4.5F, 1.0F, 6.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(121, 15).addBox(-5.0F, -6.5F, -4.5F, 1.0F, 6.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(71, 39).addBox(-4.0F, -6.75F, -4.5625F, 8.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).texOffs(91, 39).addBox(-4.0F, -1.25F, -4.5625F, 8.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).texOffs(17, 24).addBox(3.25F, -6.5F, -4.5625F, 1.0F, 6.0F, 1.0F, new CubeDeformation(-0.25F)).texOffs(17, 24).addBox(-4.25F, -6.5F, -4.5625F, 1.0F, 6.0F, 1.0F, new CubeDeformation(-0.25F)).texOffs(55, 24).addBox(4.4375F, -2.5F, -1.5F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.375F)).texOffs(55, 24).addBox(4.4375F, -3.5F, -1.5F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.375F)).texOffs(55, 24).addBox(4.4375F, -4.5F, -1.5F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.375F)).texOffs(55, 24).addBox(-5.4375F, -2.5F, -1.5F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.375F)).texOffs(55, 24).addBox(-5.4375F, -3.5F, -1.5F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.375F)).texOffs(55, 24).addBox(-5.4375F, -4.5F, -1.5F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.375F)).texOffs(89, 44).addBox(2.0F, -8.0F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.125F)).texOffs(89, 44).addBox(-3.0F, -8.0F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.125F)).texOffs(1, 44).addBox(-2.5F, -8.5F, -0.5F, 5.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, -9.0F, 0.0F));
+
+		PartDefinition Bezel_Corner_1_1_r1 = Head.addOrReplaceChild("Bezel_Corner_1_1_r1", CubeListBuilder.create().texOffs(83, 44).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2071F)).texOffs(1, 24).addBox(-0.5F, -0.5F, 0.5F, 1.0F, 1.0F, 6.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-4.0F, -6.5F, -4.0F, 0.0F, 0.0F, 0.7854F));
+
+		PartDefinition Bezel_Corner_1_ -1_
+		r1 = Head.addOrReplaceChild("Bezel_Corner_1_-1_r1", CubeListBuilder.create().texOffs(83, 44).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2071F)).texOffs(1, 24).addBox(-0.5F, -0.5F, 0.5F, 1.0F, 1.0F, 6.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(-4.0F, -0.5F, -4.0F, 0.0F, 0.0F, 0.7854F));
+
+		PartDefinition Bezel_Corner_ -1_1_
+		r1 = Head.addOrReplaceChild("Bezel_Corner_-1_1_r1", CubeListBuilder.create().texOffs(83, 44).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2071F)).texOffs(1, 24).addBox(-0.5F, -0.5F, 0.5F, 1.0F, 1.0F, 6.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(4.0F, -6.5F, -4.0F, 0.0F, 0.0F, 0.7854F));
+
+		PartDefinition Bezel_Corner_ -1_ - 1_
+		r1 = Head.addOrReplaceChild("Bezel_Corner_-1_-1_r1", CubeListBuilder.create().texOffs(83, 44).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2071F)).texOffs(1, 24).addBox(-0.5F, -0.5F, 0.5F, 1.0F, 1.0F, 6.0F, new CubeDeformation(0.2071F)), PartPose.offsetAndRotation(4.0F, -0.5F, -4.0F, 0.0F, 0.0F, 0.7854F));
+
+		PartDefinition Screen_Display = Head.addOrReplaceChild("Screen_Display", CubeListBuilder.create().texOffs(61, 15).addBox(-4.0F, -3.0F, 0.0F, 8.0F, 6.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -3.5F, -4.25F));
+
+		PartDefinition Neck_Hinge = Chassis.addOrReplaceChild("Neck_Hinge", CubeListBuilder.create().texOffs(119, 24).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(111, 39).addBox(-3.0F, -0.5F, -0.5F, 6.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -9.0F, 0.0F));
+
+		PartDefinition Body = Chassis.addOrReplaceChild("Body", CubeListBuilder.create().texOffs(81, 1).addBox(-3.0F, -1.5F, -2.5F, 6.0F, 3.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(37, 24).addBox(-2.0F, -2.5F, -2.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -5.5F, 0.0F));
+
+		PartDefinition Chest_Front = Body.addOrReplaceChild("Chest_Front", CubeListBuilder.create().texOffs(79, 24).addBox(-3.0F, -1.5F, -0.625F, 6.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(15, 44).addBox(-1.5F, -0.625F, -0.9375F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.125F)).texOffs(55, 44).addBox(-1.0F, -0.75F, -1.125F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).texOffs(63, 44).addBox(-1.5F, 0.375F, -1.125F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(63, 44).addBox(-1.5F, -0.125F, -1.125F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)), PartPose.offsetAndRotation(0.0F, 0.0F, -2.5F, 0.2094F, 0.0F, 0.0F));
+
+		PartDefinition Rear_Module_Mount = Body.addOrReplaceChild("Rear_Module_Mount", CubeListBuilder.create().texOffs(95, 24).addBox(-2.0F, -1.5F, -0.5F, 4.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(51, 33).addBox(-1.5F, -1.0F, -0.125F, 3.0F, 2.0F, 1.0F, new CubeDeformation(-0.125F)).texOffs(71, 44).addBox(0.0F, 0.0F, 0.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(71, 44).addBox(0.0F, -1.0F, 0.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(77, 44).addBox(-1.0F, 0.0F, 0.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(77, 44).addBox(-1.0F, -1.0F, 0.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)), PartPose.offset(0.0F, 0.0F, 2.5F));
+
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(45, 44).addBox(0.5F, -12.0F, 3.0625F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(45, 44).addBox(0.5F, -13.0F, 3.0625F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(45, 44).addBox(0.5F, -14.0F, 3.0625F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(45, 44).addBox(-3.5F, -12.0F, 3.0625F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(45, 44).addBox(-3.5F, -13.0F, 3.0625F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)).texOffs(45, 44).addBox(-3.5F, -14.0F, 3.0625F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.375F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 128, 128);
+	}
+
+	@Override
+	public void setupAnim (Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+
+	}
+
+	@Override
+	public void renderToBuffer (PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+		Chassis.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	}
+
+}

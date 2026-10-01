@@ -1,0 +1,68 @@
+{
+  "project": "RoviEntity",
+  "design": "Concept rebuild - standard gripper configuration",
+  "texture": [
+    128,
+    128
+  ],
+  "cubes": 224,
+  "exportedCubes": 222,
+  "wheelsPerTrack": 3,
+  "previewEyesExported": false,
+  "animation": "animation.rovi.concept_preview",
+  "length": 8,
+  "clearanceChecks": [
+    {
+      "time": 0,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 1.2,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 2.4,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 4.75,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 5.25,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 7,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 8,
+      "headCollisions": [],
+      "armCollisions": []
+    }
+  ],
+  "finalFingerClearanceChecks": [
+    {
+      "time": 0,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 1.2,
+      "headCollisions": [],
+      "armCollisions": []
+    },
+    {
+      "time": 5.25,
+      "headCollisions": [],
+      "armCollisions": []
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "block.rovi.assembler": "Assembler",
   "block.rovi.garage": "Garage",
+  "entity.rovi.rovi": "Rovi",
   "item.rovi.drive_sprocket": "Drive Sprocket",
   "item.rovi.idler_wheel": "Idler Wheel",
   "item.rovi.return_roller": "Return Roller",
@@ -8,6 +9,7 @@
   "item.rovi.rovi_frame": "Rovi Frame",
   "item.rovi.rovi_head": "Rovi Head",
   "item.rovi.rovi_running_gear": "Rovi Running Gear",
+  "item.rovi.rovi_spawn_egg": "Rovi Spawn Egg",
   "item.rovi.track": "Track",
   "item.rovi.wheel": "Wheel",
   "itemGroup.rovi": "Rovi"

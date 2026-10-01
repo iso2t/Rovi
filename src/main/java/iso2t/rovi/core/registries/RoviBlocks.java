@@ -1,8 +1,10 @@
-package iso2t.rovi.core.definitions;
+package iso2t.rovi.core.registries;
 
 import com.google.common.base.Preconditions;
 import iso2t.rovi.core.CreativeTab;
 import iso2t.rovi.core.Rovi;
+import iso2t.rovi.core.definitions.BlockDefinition;
+import iso2t.rovi.core.definitions.ItemDefinition;
 import iso2t.rovi.helpers.registry.RegistryString;
 import iso2t.rovi.helpers.resource.Resource;
 import lombok.AccessLevel;
@@ -29,7 +31,7 @@ public final class RoviBlocks {
 
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(Rovi.MODID);
 
-	private static final List<BlockDefinition<?>> BLOCKS = new ArrayList<>();
+	private static final List<BlockDefinition<?>>                             BLOCKS            = new ArrayList<>();
 	private static final BlockBehaviour.StateArgumentPredicate<EntityType<?>> NEVER_ALLOW_SPAWN = (state, level, pos, entity) -> false;
 
 	public static final BlockDefinition<Block> ASSEMBLER = block("Assembler", Block::new);

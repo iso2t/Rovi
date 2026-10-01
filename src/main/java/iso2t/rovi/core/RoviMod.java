@@ -1,7 +1,8 @@
 package iso2t.rovi.core;
 
-import iso2t.rovi.core.definitions.RoviBlocks;
-import iso2t.rovi.core.definitions.RoviItems;
+import iso2t.rovi.core.registries.RoviBlocks;
+import iso2t.rovi.core.registries.RoviEntities;
+import iso2t.rovi.core.registries.RoviItems;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,17 +24,19 @@ public abstract sealed class RoviMod implements Rovi permits RoviClient, RoviSer
 	static Rovi INSTANCE;
 
 	@Getter
-	public IEventBus eventBus;
+	private IEventBus eventBus;
 
 	@Getter
-	public ModContainer modContainer;
+	private ModContainer modContainer;
 
 	public final void init () {
-		if (INSTANCE != null) throw new IllegalStateException("RoviMod already initialized");
+		if (INSTANCE != null) throw new IllegalStateException(Rovi.NAME + " already initialized.");
 		INSTANCE = this;
 
 		RoviBlocks.REGISTRY.register(getEventBus());
+		RoviEntities.REGISTRY.register(getEventBus());
 		RoviItems.REGISTRY.register(getEventBus());
+		getEventBus().addListener(RoviEntities::registerAttributes);
 
 		getEventBus().addListener((RegisterEvent event) -> {
 			if (event.getRegistryKey() == Registries.CREATIVE_MODE_TAB) CreativeTab.init(BuiltInRegistries.CREATIVE_MODE_TAB);

@@ -1,8 +1,9 @@
 package iso2t.rovi.datagen.language;
 
 import iso2t.rovi.core.Rovi;
-import iso2t.rovi.core.definitions.RoviBlocks;
-import iso2t.rovi.core.definitions.RoviItems;
+import iso2t.rovi.core.registries.RoviBlocks;
+import iso2t.rovi.core.registries.RoviEntities;
+import iso2t.rovi.core.registries.RoviItems;
 import net.minecraft.data.DataGenerator;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 
@@ -22,6 +23,7 @@ public class RoviEnLangProvider extends LanguageProvider {
 
 	protected void addManualTranslations () {
 		add("itemGroup." + Rovi.MODID, Rovi.NAME);
+		add(RoviEntities.ROVI.get(), "Rovi");
 	}
 
 }

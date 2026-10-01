@@ -1,9 +1,7 @@
 package iso2t.rovi.core;
 
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
 import iso2t.rovi.core.definitions.ItemDefinition;
-import iso2t.rovi.core.definitions.RoviItems;
+import iso2t.rovi.core.registries.RoviItems;
 import iso2t.rovi.helpers.resource.Resource;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -12,8 +10,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 import java.util.ArrayList;
 import java.util.List;
